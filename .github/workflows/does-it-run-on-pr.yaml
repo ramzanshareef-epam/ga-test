@@ -1,0 +1,7 @@
+name: "Does GitHub Actions run on pulling the code?"
+on: [pull_request]
+jobs:
+    Learning-GitHub-Actions:
+        runs-on: windows-latest
+        steps:
+            - run : echo ${{ github.event_name }} "Hello, World!"
